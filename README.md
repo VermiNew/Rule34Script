@@ -14,6 +14,14 @@ Example: python script.py --tags catgirl nekomimi --destination downloads --limi
 
 - GUI: Users can run the script with the --gui flag to launch the graphical user interface.
 
+---
+
 ### Dependencies:
 
-> The script utilizes the rule34 Python library for interacting with the Rule34 API. Other dependencies include requests, argparse, logging, pathlib, timeit, colorama, and tkinter for the GUI.
+- The script utilizes the rule34 Python library for interacting with the Rule34 API. Other dependencies include requests, argparse, logging, pathlib, timeit, colorama, and tkinter for the GUI.
+
+---
+
+### Sources:
+[Script based on](https://github.com/Kyomuru/Rule34-Downloader/blob/master/main.py)
+[Rule34 Library for Python](https://pypi.org/project/rule34/)
