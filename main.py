@@ -182,7 +182,7 @@ if __name__ == "__main__":
     (__\_)\____/\____/(____)(____/  (__/  (____/ \__/ (_/\_)\_)__)\____/ \__/ \_/\_/(____/(____)(__\_)
     '''
     print(logo)
-    print('=' * len(max(logo.split('\n'), key=len)))
+    print('=' * len(max(logo.split('\n'), key=len)) + '=' * 4)
     print()
 
     if args.gui:
