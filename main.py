@@ -6,6 +6,7 @@ from pathlib import Path
 from timeit import default_timer
 from colorama import Fore, Style
 import tkinter as tk
+from tqdm import tqdm
 
 LOGGING_LEVEL = logging.INFO
 
@@ -49,7 +50,7 @@ def main(parameters):
             logging.info(f"The download limit is capped to {parameters.limit} images")
 
         logger.info(f"{Fore.CYAN}Gathering data from Rule34...{Style.RESET_ALL} "
-                    f"(this will take approximately {0.002 * images_count:.3g} seconds)")
+                    f"(this will take approximately {format(0.002 * images_count, '.3f')} seconds)")
 
         fetch_start = default_timer()
         try:
@@ -62,7 +63,7 @@ def main(parameters):
 
         fetch_end = default_timer()
 
-        logger.info(f"This took exactly {(fetch_end - fetch_start) / images_count:.3g} seconds")
+        logger.info(f"This took exactly {format((fetch_end - fetch_start) / images_count, '.3f')} seconds")
 
         if images is None:
             logger.error(f"{Fore.RED}Rule34 didn't give any image; this should not happen{Style.RESET_ALL}")
@@ -104,9 +105,13 @@ def main(parameters):
                 logger.error(f"Error while downloading image! ({response.status_code})")
                 continue
 
+            total_size_in_bytes = int(response.headers.get('content-length', 0))
+
             with open(output_name, 'wb') as output_file:
-                for chunk in response.iter_content(1024):
-                    output_file.write(chunk)
+                with tqdm(total=total_size_in_bytes, unit='B', unit_scale=True, desc=f"Downloading {image_name}") as pbar:
+                    for chunk in response.iter_content(1024):
+                        output_file.write(chunk)
+                        pbar.update(len(chunk))
 
             logger.info(f"{image_name} downloaded!")
             downloaded_images += 1
