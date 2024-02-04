@@ -3,3 +3,4 @@ rule34
 requests
 colorama
 tqdm
+async_timeout
