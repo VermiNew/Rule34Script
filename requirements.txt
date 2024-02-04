@@ -1,6 +1,17 @@
-pillow
+# Provides asynchronous API interactions for content downloading, dependent on async_timeout for task management.
 rule34
-requests
-colorama
-tqdm
+
+# Manages task timeouts to ensure the asynchronous operations by rule34 library do not hang indefinitely.
 async_timeout
+
+# Facilitates the retrieval of web content through HTTP requests, essential for web-based interactions.
+requests
+
+# Offers tools for image manipulation, including resizing and converting formats, crucial for processing downloaded images.
+pillow
+
+# Enhances command-line interface feedback with a progress bar, improving user experience during long operations.
+tqdm
+
+# Adds color and style to terminal outputs, increasing readability and user interaction quality.
+colorama

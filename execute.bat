@@ -39,4 +39,10 @@ if /i "%install_libraries_choice%"=="y" (
 
 .\venv\Scripts\python.exe -m pip install --upgrade pip
 
-echo To execute downloader script use [main.py --tags "name (for example girl)" --limit 0 (limit as number)]
+echo To use the downloader script, execute:
+echo   main.py --tags "TAGS" [--limit NUMBER] [--destination PATH] [--no-videos]
+echo.
+echo Use --help for more information on command options.
+echo.
+echo Example:
+echo   main.py --tags "anime girl" --limit 100 --destination "./files"
