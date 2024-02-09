@@ -71,17 +71,15 @@ We welcome any contributions that improve the project. Whether it's bug fixes, f
 
 ## Badges
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Platform: Batch](https://img.shields.io/badge/Platform-Batch-blue.svg)](https://en.wikipedia.org/wiki/Batch_file)
+[![License: MIT](https://img.shields.io/github/license/VermiNew/Rule34Script.svg?style=flat-square)](LICENSE)
+[![Batch](https://img.shields.io/badge/Platform-Batch-blue.svg)](https://en.wikipedia.org/wiki/Batch_file)
 [![Platform: Python](https://img.shields.io/badge/Platform-Python-orange.svg)](https://www.python.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/VermiNew/Rule34Script.svg)](https://github.com/VermiNew/Rule34Script/stargazers)
-
-[![Build Status](https://img.shields.io/travis/com/Rule34Script/master.svg?style=flat-square)](https://travis-ci.com/Rule34Script)
-[![Coverage Status](https://img.shields.io/codecov/c/github/Rule34Script/master.svg?style=flat-square)](https://codecov.io/gh/Rule34Script)
-[![Stable Release](https://img.shields.io/badge/Release-Stable-darkgreen.svg)](https://github.com/Rule34Script/releases/tag/stable)
-[![Contributor Friendly](https://img.shields.io/badge/Contributions-Welcome-darkgreen.svg)](https://github.com/Rule34Script/blob/main/CONTRIBUTING.md)
-[![GitHub Issues](https://img.shields.io/github/issues/Rule34Script.svg?style=flat-square)](https://github.com/Rule34Script/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/Rule34Script.svg?style=social&label=Stars)](https://github.com/Rule34Script/stargazers)
+[![Build Status](https://img.shields.io/travis/com/VermiNew/Rule34Script/master.svg?style=flat-square)](https://travis-ci.com/VermiNew/Rule34Script)
+[![Coverage Status](https://img.shields.io/codecov/c/github/VermiNew/Rule34Script/master.svg?style=flat-square)](https://codecov.io/gh/VermiNew/Rule34Script)
+[![Stable Release](https://img.shields.io/badge/Release-Stable-darkgreen.svg)](https://github.com/VermiNew/Rule34Script/releases/tag/stable)
+[![Contributor Friendly](https://img.shields.io/badge/Contributions-Welcome-darkgreen.svg)](https://github.com/VermiNew/Rule34Script/blob/main/CONTRIBUTING.md)
+[![GitHub Issues](https://img.shields.io/github/issues/VermiNew/Rule34Script.svg?style=flat-square)](https://github.com/VermiNew/Rule34Script/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/VermiNew/Rule34Script.svg?style=social&label=Stars)](https://github.com/VermiNew/Rule34Script/stargazers)
 
 ## Dependencies
 
