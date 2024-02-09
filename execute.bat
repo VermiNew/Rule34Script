@@ -1,5 +1,5 @@
 @echo off
-set "venv_dir=venv"
+set "venv_dir=.venv"
 
 if not exist %venv_dir% (
     echo Creating virtual environment...
@@ -11,7 +11,7 @@ call %venv_dir%\Scripts\activate
 
 :check
 @echo on
-echo If text named venv is visible then everything is good.
+echo If text named .venv is visible then everything is good.
 @echo off
 
 :install_libraries
@@ -37,7 +37,7 @@ if /i "%install_libraries_choice%"=="y" (
     goto install_libraries
 )
 
-.\venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
 
 echo To use the downloader script, execute:
 echo   main.py --tags "TAGS" [--limit NUMBER] [--destination PATH] [--no-videos]
