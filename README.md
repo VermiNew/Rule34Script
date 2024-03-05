@@ -74,8 +74,6 @@ We welcome any contributions that improve the project. Whether it's bug fixes, f
 [![License: MIT](https://img.shields.io/github/license/VermiNew/Rule34Script.svg?style=flat-square)](LICENSE)
 [![Batch](https://img.shields.io/badge/Platform-Batch-blue.svg)](https://en.wikipedia.org/wiki/Batch_file)
 [![Python](https://img.shields.io/badge/Platform-Python-orange.svg)](https://www.python.org/)
-[![Build Status](https://img.shields.io/travis/com/VermiNew/Rule34Script/master.svg?style=flat-square)](https://travis-ci.com/VermiNew/Rule34Script)
-[![Coverage Status](https://img.shields.io/codecov/c/github/VermiNew/Rule34Script/master.svg?style=flat-square)](https://codecov.io/gh/VermiNew/Rule34Script)
 [![Stable Release](https://img.shields.io/badge/Release-Stable-darkgreen.svg)](https://github.com/VermiNew/Rule34Script/releases/tag/stable)
 [![Contributor Friendly](https://img.shields.io/badge/Contributions-Welcome-darkgreen.svg)](https://github.com/VermiNew/Rule34Script/blob/main/CONTRIBUTING.md)
 [![GitHub Issues](https://img.shields.io/github/issues/VermiNew/Rule34Script.svg?style=flat-square)](https://github.com/VermiNew/Rule34Script/issues)
