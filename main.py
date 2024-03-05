@@ -224,10 +224,28 @@ if __name__ == "__main__":
     parser.add_argument('--help', '-h', action='store_true', help='Shows the help information')
 
     args = parser.parse_args()
-
-    if '--help' in sys.argv or '-h' in sys.argv or '-t' not in sys.argv and '--tags' not in sys.argv:
+    downloader = Rule34Downloader(args)
+    
+    if '--help' in sys.argv or '-h' in sys.argv:
         print_help()
         sys.exit()
+
+    if '-g' in sys.argv or '--gui' in sys.argv:
+        downloader.run_gui()
+        sys.exit()
+
+    if '-t' not in sys.argv and '--tags' not in sys.argv:
+        print_help()
+        sys.exit()
+        
+    tags_index = sys.argv.index('-t') if '-t' in sys.argv else sys.argv.index('--tags')
+    if tags_index + 1 < len(sys.argv):
+        tags = sys.argv[tags_index + 1]
+        if not tags:
+            confirmation = input(f"{Fore.LIGHTRED_EX}No tags provided. Do you want to download all images from the site? (yes/no): {Style.RESET_ALL}{Fore.CYAN}\n> {Style.RESET_ALL}")
+            if confirmation.lower() != 'yes':
+                print(f"{Fore.LIGHTCYAN_EX}Operation aborted!{Style.RESET_ALL}")
+                sys.exit()
 
     logo = r'''
     ____  _  _  __    ____  ____   ___    ____   __   _  _  __ _  __     __    __   ____  ____  ____ 
@@ -239,5 +257,4 @@ if __name__ == "__main__":
     print('=' * len(max(logo.split('\n'), key=len)) + '=' * 4)
     print()
 
-    downloader = Rule34Downloader(args)
     downloader.run()
